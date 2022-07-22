@@ -6,7 +6,7 @@ public class Item {
 	private boolean isAvailable;
 
 	public Item(String assetTag, String description) {
-		this.assetTag = assetTag;
+		this.assetTag = assetTag; 	
 		this.description = description;
 		this.dueDate = "";
 		this.isAvailable = true;
@@ -16,7 +16,7 @@ public class Item {
 		String itemInfo = String.format("%-10s %-30s %-10s %-10s",
 		assetTag,
 		description,
-		isAvailable,
+		"Yes",
 		dueDate);
 		return itemInfo;
 	}
